@@ -22,17 +22,20 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="../css/magnific-popup.css" />
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
-    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="../css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="../css/jquery.timepicker.css" />
 
-    <link rel="stylesheet" href="css/flaticon.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/flaticon.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!--diseño  adicional -->
+    <link rel="stylesheet" href="../css/style2.css" />
   </head>
   <body>
     <nav
@@ -58,19 +61,19 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a href="index.html" class="nav-link">Inicio</a>
+              <a href="../index.html" class="nav-link">Inicio</a>
             </li>
             <li class="nav-item">
-              <a href="about.html" class="nav-link">Nosotros</a>
+              <a href="../about.html" class="nav-link">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a href="destination.html" class="nav-link">Viajes</a>
+              <a href="../destination.html" class="nav-link">Viajes</a>
             </li>
             <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contactanos</a>
+              <a href="../contact.html" class="nav-link">Contactanos</a>
             </li>
             <li class="nav-item">
-              <a href="login.html" class="nav-link">Iniciar Sesion</a>
+              <a href="../login.html" class="nav-link">Iniciar Sesion</a>
             </li>
           </ul>
         </div>
@@ -78,124 +81,158 @@
     </nav>
     <!-- END nav -->
 
-    <section
-      class="hero-wrap hero-wrap-2 js-fullheight"
-      style="background-image: url('images/bg_1.jpg')"
+    <div
+      class="hero-wrap js-fullheight"
+      style="background-image: url('../images/bg_5.jpg')"
     >
       <div class="overlay"></div>
       <div class="container">
         <div
-          class="row no-gutters slider-text js-fullheight align-items-end justify-content-center"
+          class="row no-gutters slider-text js-fullheight align-items-center"
+          data-scrollax-parent="true"
         >
-          <div class="col-md-9 ftco-animate pb-5 text-center">
-            <p class="breadcrumbs">
-              <span class="mr-2"
-                ><a href="index.html"
-                  >Inicio <i class="fa fa-chevron-right"></i></a
-              ></span>
-              <span>Viajes <i class="fa fa-chevron-right"></i></span>
+          <div class="col-md-7 ftco-animate">
+            <span class="subheading">Bienvenido a ¡Chapa Tu Carro!</span>
+            <h1 class="mb-4">Viajes seguros con Nosotros</h1>
+            <p class="caps">
+              Viaje a cualquier rincón del Peru rapido y seguro
             </p>
-            <h1 class="mb-0 bread">Viajes</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section ftco-no-pb ftco-no-pt">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="ftco-search d-flex justify-content-center">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://images.prismic.io/obikares/c652aba0-f7a5-48b3-ab0f-b9d5293f417d_conductor-vehiculo.jpg?auto=compress,format"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">¿A dónde vamos?</p>
+                  <a href="../pages/buscarCliA.html" class="btn btn-primary col"
+                    >viajar</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="ftco-section ftco-no-pb">
+    <section class="ftco-section services-section">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="search-wrap-1 ftco-animate">
-              <form action="#" class="search-property-1">
-                <div class="row no-gutters">
-                  <div class="col-lg d-flex">
-                    <div class="form-group p-4 border-0">
-                      <label for="#">📍 Origen</label>
-                      <div class="form-field">
-                        <div class="icon">
-                          <span class="fa fa-search"></span>
-                        </div>
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Ingrese Lugar"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg d-flex">
-                    <div class="form-group p-4">
-                      <label for="#">📍 Destino </label>
-                      <div class="form-field">
-                        <div class="icon">
-                          <span class="fa fa-search"></span>
-                        </div>
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Ingrese Lugar"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md d-flex">
-                    <div class="form-group p-4">
-                      <label for="#">📅 Fecha de Partida</label>
-                      <div class="form-field">
-                        <div class="icon">
-                          <span class="fa fa-calendar"></span>
-                        </div>
-                        <input
-                          type="text"
-                          class="form-control checkin_date"
-                          placeholder="Ingrese Fecha"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg d-flex">
-                    <div class="form-group p-4">
-                      <label for="#">Price Limit</label>
-                      <div class="form-field">
-                        <div class="select-wrap">
-                          <div class="icon">
-                            <span class="fa fa-chevron-down"></span>
-                          </div>
-                          <select name="" id="" class="form-control">
-                            <option value="">$5,000</option>
-                            <option value="">$10,000</option>
-                            <option value="">$50,000</option>
-                            <option value="">$100,000</option>
-                            <option value="">$200,000</option>
-                            <option value="">$300,000</option>
-                            <option value="">$400,000</option>
-                            <option value="">$500,000</option>
-                            <option value="">$600,000</option>
-                            <option value="">$700,000</option>
-                            <option value="">$800,000</option>
-                            <option value="">$900,000</option>
-                            <option value="">$1,000,000</option>
-                            <option value="">$2,000,000</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-lg d-flex">
-                        <div class="form-group d-flex w-100 border-0">
-                          <div
-                            class="form-field w-100 align-items-center d-flex"
-                          >
-                            <input
-                              type="submit"
-                              value="Search"
-                              class="align-self-stretch form-control btn btn-primary"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+        <div class="row d-flex table-responsive">
+          <table class="table tablePrec">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col mx-auto">#</th>
+                <th scope="col mx-auto">PARTIDA</th>
+                <th scope="col mx-auto">LLEGADA</th>
+                <th scope="col mx-auto">HORA DE PARTIDA</th>
+                <th scope="col mx-auto">HORA DE LLEGADA</th>
+                <th scope="col mx-auto">COSTO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Lima</td>
+                <td>Arequipa</td>
+                <td>07:45 am</td>
+                <td>01:30 pm</td>
+                <td>65.0</td>
+              </tr>
+              <!-- Fila 2 -->
+              <tr>
+                <th scope="row">2</th>
+                <td>Arequipa</td>
+                <td>Cusco</td>
+                <td>10:15 am</td>
+                <td>03:45 pm</td>
+                <td>78.2</td>
+              </tr>
+              <!-- Fila 3 -->
+              <tr>
+                <th scope="row">3</th>
+                <td>Lima</td>
+                <td>Trujillo</td>
+                <td>08:30 am</td>
+                <td>12:30 pm</td>
+                <td>55.5</td>
+              </tr>
+              <!-- Fila 4 -->
+              <tr>
+                <th scope="row">4</th>
+                <td>Arequipa</td>
+                <td>Puno</td>
+                <td>09:00 am</td>
+                <td>02:15 pm</td>
+                <td>70.8</td>
+              </tr>
+              <!-- Fila 5 -->
+              <tr>
+                <th scope="row">5</th>
+                <td>Lima</td>
+                <td>Ica</td>
+                <td>07:00 am</td>
+                <td>11:00 am</td>
+                <td>50.2</td>
+              </tr>
+              <!-- Fila 6 -->
+              <tr>
+                <th scope="row">6</th>
+                <td>Cusco</td>
+                <td>Puno</td>
+                <td>11:30 am</td>
+                <td>04:45 pm</td>
+                <td>85.5</td>
+              </tr>
+              <!-- Fila 7 -->
+              <tr>
+                <th scope="row">7</th>
+                <td>Trujillo</td>
+                <td>Chiclayo</td>
+                <td>01:15 pm</td>
+                <td>05:30 pm</td>
+                <td>62.3</td>
+              </tr>
+              <!-- Fila 8 -->
+              <tr>
+                <th scope="row">8</th>
+                <td>Lima</td>
+                <td>Pisco</td>
+                <td>09:45 am</td>
+                <td>02:00 pm</td>
+                <td>68.7</td>
+              </tr>
+              <!-- Fila 9 -->
+              <tr>
+                <th scope="row">9</th>
+                <td>Arequipa</td>
+                <td>Nazca</td>
+                <td>10:30 am</td>
+                <td>03:15 pm</td>
+                <td>75.4</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="container">
+            <div class="row">
+              <div class="col text-center">
+                <div class="block-27">
+                  <ul id="paginationButtons">
+                    <!-- Botones de paginación se generarán dinámicamente aquí -->
+                  </ul>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -204,13 +241,19 @@
 
     <section class="ftco-section">
       <div class="container">
+        <div class="row justify-content-center pb-4">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+            <span class="subheading">MAS VISITADOS</span>
+            <h2 class="mb-4">Elige Tu Destino</h2>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-4 ftco-animate">
             <div class="project-wrap">
               <a
                 href="#"
                 class="img"
-                style="background-image: url(images/destination-1.jpg)"
+                style="background-image: url(../images/destination-1.jpg)"
               >
                 <span class="price">$550/person</span>
               </a>
@@ -234,7 +277,7 @@
               <a
                 href="#"
                 class="img"
-                style="background-image: url(images/destination-2.jpg)"
+                style="background-image: url(../images/destination-2.jpg)"
               >
                 <span class="price">$550/person</span>
               </a>
@@ -258,7 +301,7 @@
               <a
                 href="#"
                 class="img"
-                style="background-image: url(images/destination-3.jpg)"
+                style="background-image: url(../images/destination-3.jpg)"
               >
                 <span class="price">$550/person</span>
               </a>
@@ -283,7 +326,7 @@
               <a
                 href="#"
                 class="img"
-                style="background-image: url(images/destination-4.jpg)"
+                style="background-image: url(../images/destination-4.jpg)"
               >
                 <span class="price">$550/person</span>
               </a>
@@ -307,7 +350,7 @@
               <a
                 href="#"
                 class="img"
-                style="background-image: url(images/destination-5.jpg)"
+                style="background-image: url(../images/destination-5.jpg)"
               >
                 <span class="price">$550/person</span>
               </a>
@@ -331,7 +374,7 @@
               <a
                 href="#"
                 class="img"
-                style="background-image: url(images/destination-6.jpg)"
+                style="background-image: url(../images/destination-6.jpg)"
               >
                 <span class="price">$550/person</span>
               </a>
@@ -348,98 +391,67 @@
                   <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
                 </ul>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="project-wrap">
-              <a
-                href="#"
-                class="img"
-                style="background-image: url(images/destination-7.jpg)"
-              >
-                <span class="price">$550/person</span>
-              </a>
-              <div class="text p-4">
-                <span class="days">7 Days Tour</span>
-                <h3><a href="#">Banaue Rice Terraces</a></h3>
-                <p class="location">
-                  <span class="fa fa-map-marker"></span> Banaue, Ifugao,
-                  Philippines
-                </p>
-                <ul>
-                  <li><span class="flaticon-shower"></span>2</li>
-                  <li><span class="flaticon-king-size"></span>3</li>
-                  <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="project-wrap">
-              <a
-                href="#"
-                class="img"
-                style="background-image: url(images/destination-8.jpg)"
-              >
-                <span class="price">$550/person</span>
-              </a>
-              <div class="text p-4">
-                <span class="days">7 Days Tour</span>
-                <h3><a href="#">Banaue Rice Terraces</a></h3>
-                <p class="location">
-                  <span class="fa fa-map-marker"></span> Banaue, Ifugao,
-                  Philippines
-                </p>
-                <ul>
-                  <li><span class="flaticon-shower"></span>2</li>
-                  <li><span class="flaticon-king-size"></span>3</li>
-                  <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="project-wrap">
-              <a
-                href="#"
-                class="img"
-                style="background-image: url(images/destination-9.jpg)"
-              >
-                <span class="price">$550/person</span>
-              </a>
-              <div class="text p-4">
-                <span class="days">7 Days Tour</span>
-                <h3><a href="#">Banaue Rice Terraces</a></h3>
-                <p class="location">
-                  <span class="fa fa-map-marker"></span> Banaue, Ifugao,
-                  Philippines
-                </p>
-                <ul>
-                  <li><span class="flaticon-shower"></span>2</li>
-                  <li><span class="flaticon-king-size"></span>3</li>
-                  <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col text-center">
-            <div class="block-27">
-              <ul>
-                <li><a href="#">&lt;</a></li>
-                <li class="active"><span>1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">&gt;</a></li>
-              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!--<section class="ftco-section ftco-about img"style="background-image: url(../images/bg_4.jpg);">
+			<div class="overlay"></div>
+			<div class="container py-md-5">
+				<div class="row py-md-5">
+					<div class="col-md d-flex align-items-center justify-content-center">
+						<a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
+							<span class="fa fa-play"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>-->
+
+    <!-- <section class="ftco-section ftco-about ftco-no-pt img">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-md-12 about-intro">
+            <div class="row">
+              <div class="col-md-6 d-flex align-items-stretch">
+                <div
+                  class="img d-flex w-100 align-items-center justify-content-center"
+                  style="background-image: url(../images/about-1.jpg)"
+                ></div>
+              </div>
+              <div class="col-md-6 pl-md-5 py-5">
+                <div class="row justify-content-start pb-3">
+                  <div class="col-md-12 heading-section ftco-animate">
+                    <span class="subheading">¿Porque Elegirnos?</span>
+                    <h2 class="mb-4">
+                      Hacemos que su viaje sea memorable y seguro con nosotros
+                    </h2>
+                    <p><a href="#" class="btn btn-primary">Buscar Ruta</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!--<section class="ftco-intro ftco-section ftco-no-pt">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-12 text-center">
+						<div class="img"  style="background-image: url(../images/bg_2.jpg);">
+							<div class="overlay"></div>
+							<h2>We Are Pacific A Travel Agency</h2>
+							<p>We can manage your dream building A small river named Duden flows by their place</p>
+							<p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Ask For A Quote</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>-->
 
     <footer
       class="ftco-footer bg-bottom ftco-no-pt"
@@ -551,24 +563,26 @@
       </svg>
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/scrollax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/jquery.stellar.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/jquery.animateNumber.min.js"></script>
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script src="../js/scrollax.min.js"></script>
+    <script src="../https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="../js/google-map.js"></script>
+    <script src="../js/main.js"></script>
     <script
       src="https://kit.fontawesome.com/742049c140.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="../js/myJS.js"></script>
   </body>
 </html>
