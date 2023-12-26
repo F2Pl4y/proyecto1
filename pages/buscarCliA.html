@@ -97,16 +97,25 @@
       <div class="col-md-12">
         <form action="" novalidate>
           <div class="form-row">
-            <div class="col-md-5 mb-3">
+            <div class="col-md-6 mb-3">
               <!-- <label>PUNTO INICIAL</label> -->
               <input type="text" class="form-control" value="" placeholder="PUNTO INICIAL" required>
             </div>
-            <div class="col-md-5 mb-3">
+            <div class="col-md-6 mb-3">
               <!-- <label>PUNTO DE LLEGADA</label> -->
               <input type="text" class="form-control" value="" placeholder="PUNTO DE LLEGADA">
             </div>
-            <div class="col-md-2 mb-3">
-              <button class="btn btn-primary form-control" type="submit">BUSCAR RUTA</button>
+            <div class="col-md-6 mb-3">
+              <!-- <label>PUNTO DE LLEGADA</label> -->
+              <!-- <input type="text" class="form-control" value="" placeholder="PUNTO DE LLEGADA"> -->
+              <!-- <div class="col-md d-flex"> -->
+              <div class="form-field">
+                <input type="text" class="form-control checkin_date" placeholder="📅 FECHA DE PARTIDA" />
+              </div>
+              <!-- </div> -->
+            </div>
+            <div class="col-md-6 mb-3">
+              <a class="btn btn-primary form-control" type="submit">BUSCAR RUTA</a>
             </div>
           </div>
         </form>
@@ -116,98 +125,128 @@
 
   <section class="ftco-section services-section">
     <div class="container">
+
       <div class="row d-flex table-responsive">
+
         <table class="table tablePrec">
           <thead class="thead-dark">
             <tr>
-              <th scope="col mx-auto">#</th>
-              <th scope="col mx-auto">PARTIDA</th>
+              <th scope="col mx-auto" colspan="6">Domingo: 24 de diciembre</th>
+              <!-- <th scope="col mx-auto">PARTIDA</th>
               <th scope="col mx-auto">LLEGADA</th>
               <th scope="col mx-auto">HORA DE PARTIDA</th>
               <th scope="col mx-auto">HORA DE LLEGADA</th>
-              <th scope="col mx-auto">COSTO</th>
+              <th scope="col mx-auto">COSTO</th> -->
             </tr>
           </thead>
+
           <tbody>
             <tr>
-              <th scope="row">1</th>
+              <td>07:45 am</td>
               <td>Lima</td>
               <td>Arequipa</td>
-              <td>07:45 am</td>
-              <td>01:30 pm</td>
               <td>65.0</td>
+              <td>5</td>
+              <td>
+                <button type="button" class="btn btn-success">Secondary</button>
+              </td>
             </tr>
             <!-- Fila 2 -->
             <tr>
-              <th scope="row">2</th>
+              <td>10:15 am</td>
               <td>Arequipa</td>
               <td>Cusco</td>
-              <td>10:15 am</td>
-              <td>03:45 pm</td>
               <td>78.2</td>
+              <td>4</td>
+              <td>
+                <div class="project-wrap">
+                  <div class="text p-2">
+                    <ul class="mx-auto">
+                      <li><span class="flaticon-mountains"></span>Near</li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-success">Secondary</button>
+                </div>
+              </td>
+
             </tr>
+
             <!-- Fila 3 -->
             <tr>
-              <th scope="row">3</th>
+              <td>08:30 am</td>
               <td>Lima</td>
               <td>Trujillo</td>
-              <td>08:30 am</td>
-              <td>12:30 pm</td>
               <td>55.5</td>
+              <td>3</td>
+              <td>
+                <button type="button" class="btn btn-success">Secondary</button>
+              </td>
             </tr>
             <!-- Fila 4 -->
             <tr>
-              <th scope="row">4</th>
+              <td>09:00 am</td>
               <td>Arequipa</td>
               <td>Puno</td>
-              <td>09:00 am</td>
-              <td>02:15 pm</td>
               <td>70.8</td>
+              <td>2</td>
+              <td>
+                <button type="button" class="btn btn-success">Secondary</button>
+              </td>
             </tr>
             <!-- Fila 5 -->
             <tr>
-              <th scope="row">5</th>
+              <td>07:00 am</td>
               <td>Lima</td>
               <td>Ica</td>
-              <td>07:00 am</td>
-              <td>11:00 am</td>
               <td>50.2</td>
+              <td>1</td>
+              <td>
+                <button type="button" class="btn btn-success">Secondary</button>
+              </td>
             </tr>
             <!-- Fila 6 -->
             <tr>
-              <th scope="row">6</th>
+              <td>11:30 am</td>
               <td>Cusco</td>
               <td>Puno</td>
-              <td>11:30 am</td>
-              <td>04:45 pm</td>
               <td>85.5</td>
+              <td>4</td>
+              <td>
+                <button type="button" class="btn btn-success">Secondary</button>
+              </td>
             </tr>
             <!-- Fila 7 -->
             <tr>
-              <th scope="row">7</th>
+              <td>01:15 pm</td>
               <td>Trujillo</td>
               <td>Chiclayo</td>
-              <td>01:15 pm</td>
-              <td>05:30 pm</td>
               <td>62.3</td>
+              <td>3</td>
+              <td>
+                <button type="button" class="btn btn-success">Secondary</button>
+              </td>
             </tr>
             <!-- Fila 8 -->
             <tr>
-              <th scope="row">8</th>
+              <td>09:45 am</td>
               <td>Lima</td>
               <td>Pisco</td>
-              <td>09:45 am</td>
-              <td>02:00 pm</td>
               <td>68.7</td>
+              <td>2</td>
+              <td>
+                <button type="button" class="btn btn-success">Secondary</button>
+              </td>
             </tr>
             <!-- Fila 9 -->
             <tr>
-              <th scope="row">9</th>
+              <td>10:30 am</td>
               <td>Arequipa</td>
               <td>Nazca</td>
-              <td>10:30 am</td>
-              <td>03:15 pm</td>
               <td>75.4</td>
+              <td>1</td>
+              <td>
+                <button type="button" class="btn btn-success">Secondary</button>
+              </td>
             </tr>
           </tbody>
         </table>
