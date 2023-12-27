@@ -1,6 +1,8 @@
-.tablePrec tbody tr {
+.tablePrec1,
+.tablePrec2 tbody tr {
   text-align: center;
 }
-.tablePrec thead {
+.tablePrec1,
+.tablePrec2 thead {
   text-align: center;
 }
