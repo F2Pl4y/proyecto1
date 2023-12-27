@@ -97,25 +97,55 @@
             <div class="col-md-12">
                 <form action="" novalidate>
                     <div class="form-row">
+                        <!-- primera linea -->
                         <div class="col-md-6 mb-3">
-                            <!-- <label>PUNTO INICIAL</label> -->
                             <input type="text" class="form-control" value="" placeholder="PUNTO INICIAL" required>
                         </div>
+
                         <div class="col-md-6 mb-3">
-                            <!-- <label>PUNTO DE LLEGADA</label> -->
                             <input type="text" class="form-control" value="" placeholder="PUNTO DE LLEGADA">
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <!-- <label>PUNTO DE LLEGADA</label> -->
-                            <!-- <input type="text" class="form-control" value="" placeholder="PUNTO DE LLEGADA"> -->
-                            <!-- <div class="col-md d-flex"> -->
+
+                        <!-- segunda linea -->
+                        <div class="col-md-4 mb-3">
                             <div class="form-field">
                                 <input type="text" class="form-control checkin_date" placeholder="📅 FECHA DE PARTIDA" />
                             </div>
-                            <!-- </div> -->
                         </div>
-                        <div class="col-md-6 mb-3">
+
+                        <div class="col-md-4 mb-3">
+                            <!-- Agrega el atributo 'data-toggle' y 'data-target' al input -->
+                            <input type="text" id="horaSeleccionada" class="form-control" data-toggle="modal" data-target="#staticBackdrop" readonly placeholder="SELECCIONAR HORARIO">
+                        </div>
+                        <div class="col-md-4 mb-3">
                             <a class="btn btn-primary form-control" type="submit">BUSCAR RUTA</a>
+                        </div>
+                    </div>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">HORARIO</h5>
+                                </div>
+                                <div class="modal-body text-center" style="max-height: 60vh; overflow-y: auto;">
+                                    <div class="row">
+                                        <div class="col-3 text-center" id="modalColumna1">
+                                        </div>
+                                        <div class="col-3 text-center" id="modalColumna2">
+                                        </div>
+                                        <div class="col-3 text-center" id="modalColumna3">
+                                        </div>
+                                        <div class="col-3 text-center" id="modalColumna4">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -548,7 +578,7 @@
     <script src="../js/main.js"></script>
     <script src="https://kit.fontawesome.com/742049c140.js" crossorigin="anonymous"></script>
 
-    <script src="../js/myJS.js"></script>
+    <script src="../js/horas.js"></script>
 </body>
 
 </html>
