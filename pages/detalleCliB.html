@@ -151,7 +151,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 mb-3">
+                        <!-- <div class="col-md-4 mb-3">
                             <div class="custom-control custom-switch">
                                 <input type="checkbox" class="custom-control-input" id="customSwitch1">
                                 <label class="custom-control-label" for="customSwitch1">
@@ -160,74 +160,44 @@
                                     <img alt="Derecha" class="switch-image right-image">
                                 </label>
                             </div>
+                        </div> -->
+
+
+
+
+                        <div class="col-md-4 mb-3">
+                            <div class="row">
+                                <!-- Parte izquierda con imagen | yape-->
+                                <div class="col-md-2 mb-3" style="height: 100%;">
+                                    <div class="card seleccionable" data-valor="1" id="izquierda" style="width: 100%;">
+                                        <img src="https://seeklogo.com/images/Y/yape-logo-36579BE1F6-seeklogo.com.png" class="card-img-top" alt="Imagen Izquierda" style="height: 100%;">
+                                    </div>
+                                </div>
+
+                                <!-- Parte derecha con imagen | plin-->
+                                <div class="col-md-2 mb-3" style="height: 100%;">
+                                    <div class="card seleccionable" data-valor="2" id="derecha" style="width: 100%;">
+                                        <img src="https://seeklogo.com/images/P/plin-logo-967A4AF583-seeklogo.com.png" class="card-img-top" alt="Imagen Derecha" style="height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
+
                         <style>
-                            .custom-switch .custom-control-input:checked~.custom-control-label::after {
-                                /* background-color: #fff; */
-                                background-image: url(https://bonoindependiente.pe/wp-content/uploads/2023/01/Plin.png);
+                            .seleccionable {
+                                border: 2px solid transparent;
+                                /* Borde inicial transparente */
                             }
 
-                            .custom-switch .custom-control-input:checked~.custom-control-label::before {
-                                /* background-color: #fff; */
-                                background-image: url(https://i.ytimg.com/vi/Ew0cCLyGsgQ/maxresdefault.jpg);
-                            }
-
-                            /* .custom-control-input .custom-control-label .cajita { */
-                            .custom-switch .custom-control-label::before {
-                                height: 70px !important;
-                                width: 140px !important;
-                            }
-
-                            .custom-switch .custom-control-label::after {
-                                height: 70px !important;
-                                width: 140px !important;
-                            }
-
-                            .custom-switch .left-image {
-                                background-image: url('https://i.ytimg.com/vi/Ew0cCLyGsgQ/maxresdefault.jpg');
-                                background-size: cover;
-                            }
-
-                            .custom-switch .right-image {
-                                background-image: url('https://bonoindependiente.pe/wp-content/uploads/2023/01/Plin.png');
-                                background-size: cover;
-                            }
-
-                            .custom-switch .custom-control-input:checked+.custom-control-label .left-image {
-                                opacity: 1;
-                            }
-
-                            .custom-switch .custom-control-input:not(:checked)+.custom-control-label .right-image {
-                                opacity: 1;
-                            }
-
-                            /* Otros estilos para la bolita y el texto */
-                            .custom-switch .left-image,
-                            .custom-switch .right-image,
-                            .custom-switch .switch-label {
-                                display: inline-block;
-                                vertical-align: middle;
-                            }
-
-                            .custom-switch .left-image,
-                            .custom-switch .right-image {
-                                width: 20px;
-                                /* Ajusta el ancho según tus necesidades */
-                                height: 20px;
-                                /* Ajusta la altura según tus necesidades */
-                                margin-right: 8px;
-                                /* Espacio entre la imagen y el texto */
-                                opacity: 0;
-                                /* Inicialmente oculta la imagen en la bolita */
-                            }
-
-                            .custom-switch .switch-label {
-                                vertical-align: middle;
+                            .seleccionada {
+                                border: 2px solid red;
+                                /* Borde rojo para indicar la selección */
                             }
                         </style>
 
-                        <div class="col-md-4 mb-3">
+
+                        <div class="col-md-6 mb-3">
                             <div class="form-field">
                                 <input type="text" class="form-control checkin_date" placeholder="📅 FECHA DE PARTIDA" />
                             </div>
@@ -280,6 +250,7 @@
         </div>
     </section>
 
+    <!-- Vista previa de imagenes -->
     <script>
         function previewImage() {
             var input = document.getElementById('exampleFormControlFile1');
@@ -593,6 +564,27 @@
     <script src="https://kit.fontawesome.com/742049c140.js" crossorigin="anonymous"></script>
 
     <script src="../js/horas.js"></script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('.seleccionable').click(function () {
+                // Obtener el valor asignado a la tarjeta clicada
+                var valor = $(this).data('valor');
+
+                // Desmarcar todas las tarjetas
+                $('.seleccionable').removeClass('seleccionada');
+
+                // Marcar solo la tarjeta clicada
+                $(this).addClass('seleccionada');
+
+                // Mostrar en la consola el valor de la tarjeta seleccionada
+                console.log("Valor de la tarjeta seleccionada: " + valor);
+            });
+        });
+
+    </script>
 </body>
 
 </html>
