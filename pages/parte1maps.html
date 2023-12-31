@@ -16,40 +16,50 @@
     <div id="map"></div>
 
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script> -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKpSuRKWjrWK7VjeHadWAgbKt_KMvHjIY"></script>
-    <script>
-        function findMe() {
-            var output = document.getElementById('map');
+</body>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKpSuRKWjrWK7VjeHadWAgbKt_KMvHjIY"></script> -->
+<script>
+    (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })({
+        key: "AIzaSyDKpSuRKWjrWK7VjeHadWAgbKt_KMvHjIY",
+        // Add other bootstrap parameters as needed, using camel case.
+        // Use the 'v' parameter to indicate the version to load (alpha, beta, weekly, etc.)
+    });
+</script>
+<script>
+    function findMe() {
+        var output = document.getElementById('map');
 
-            // Verificar si soporta geolocalizacion
-            if (navigator.geolocation) {
-                output.innerHTML = "<p>Tu navegador soporta Geolocalizacion</p>";
-            } else {
-                output.innerHTML = "<p>Tu navegador no soporta Geolocalizacion</p>";
-            }
-
-            //Obtenemos latitud y longitud
-            function localizacion(posicion) {
-
-                var latitude = posicion.coords.latitude;
-                var longitude = posicion.coords.longitude;
-
-                // var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&size=600x300&markers=color:red%7C" + latitude + "," + longitude + "&key=YOUR_API_KEY";
-                var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&size=600x300&markers=color:red%7C" + latitude + "," + longitude + "&key=AIzaSyDKpSuRKWjrWK7VjeHadWAgbKt_KMvHjIY";
-
-                output.innerHTML = "<img src='" + imgURL + "'>";
-            }
-
-            function error() {
-                output.innerHTML = "<p>No se pudo obtener tu ubicación</p>";
-
-            }
-
-            navigator.geolocation.getCurrentPosition(localizacion, error);
+        // Verificar si soporta geolocalizacion
+        if (navigator.geolocation) {
+            output.innerHTML = "<p>Tu navegador soporta Geolocalizacion</p>";
+        } else {
+            output.innerHTML = "<p>Tu navegador no soporta Geolocalizacion</p>";
         }
 
+        //Obtenemos latitud y longitud
+        function localizacion(posicion) {
 
-    </script>
-</body>
+            var latitude = posicion.coords.latitude;
+            var longitude = posicion.coords.longitude;
+
+            // var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&size=600x300&markers=color:red%7C" + latitude + "," + longitude + "&key=YOUR_API_KEY";
+            var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&size=600x300&markers=color:red%7C" + latitude + "," + longitude + "&key=AIzaSyDKpSuRKWjrWK7VjeHadWAgbKt_KMvHjIY";
+
+            // output.innerHTML = "<img src='" + imgURL + "'>";
+            output.innerHTML = "<img src='https://seeklogo.com/images/Y/yape-logo-36579BE1F6-seeklogo.com.png'>";
+            // alert(imgURL);
+            console.log(imgURL);
+        }
+
+        function error() {
+            output.innerHTML = "<p>No se pudo obtener tu ubicación</p>";
+
+        }
+
+        navigator.geolocation.getCurrentPosition(localizacion, error);
+    }
+
+
+</script>
 
 </html>
