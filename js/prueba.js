@@ -118,6 +118,9 @@ async function initMap(mapElementId, autocompleteElementId) {
         const options = {
             center: myLatLng,
             zoom: 15,
+            maxZoom: 22,
+            streetViewControl: false,
+            fullscreenControl: false
         };
 
         const map = new google.maps.Map(document.getElementById(mapElementId), options);
