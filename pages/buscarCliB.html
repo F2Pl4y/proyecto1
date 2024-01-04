@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
+
     <title>¡Chapa Tu Carro!</title>
+    <link rel="shortcut icon" href="#">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
@@ -25,6 +27,14 @@
 
     <!--diseño  adicional -->
     <link rel="stylesheet" href="../css/style2.css" />
+
+
+    <!-- <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrj-Po03GaGWB_AVjgwE-bxwrKq60Xa_s&libraries=places&callback=initMap"></script> -->
+    <!-- <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrj-Po03GaGWB_AVjgwE-bxwrKq60Xa_s&libraries=places"></script> -->
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrj-Po03GaGWB_AVjgwE-bxwrKq60Xa_s&libraries=places"></script>
+    <script src="../js/localizacion.js"></script>
+    <script src="../js/prueba.js"></script>
 </head>
 
 <body>
@@ -84,6 +94,13 @@
             border: 2px solid red;
             /* Borde rojo para indicar la selección */
         }
+
+        #map1,
+        #map2 {
+            --var: 300px;
+            height: calc(var(--var));
+            max-width: calc(var(--var)*1.5);
+        }
     </style>
     <section class="ftco-section ftco-no-pb">
         <div class="container">
@@ -95,19 +112,25 @@
                             <a class="" value="" placeholder="">Detalle del viaje</a>
                         </div>
                         <!-- primera linea -->
-                        <div class="col-md-6 mb-3">
-                            <input type="text" class="form-control" value="" placeholder="PUNTO DE PARTIDA" required>
+                        <div class="col-md-12 mb-3">
+                            <input type="text" class="form-control" value="" placeholder="PUNTO DE PARTIDA" required id="autocomplete1">
                         </div>
-
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-12">
+                            <div id="map1"></div>
+                            <!-- <button type="button" class="btn btn-primary" id="btn-map1" data-mapa="map1">Ver</button> -->
+                        </div>
+                        <div class="col-md-12 mb-3">
                             <input type="text" class="form-control" value="" placeholder="DETALLE" required>
                         </div>
 
-                        <div class="col-md-6 mb-3">
-                            <input type="text" class="form-control" value="" placeholder="PUNTO DE LLEGADA">
+                        <div class="col-md-12 mb-3">
+                            <input type="text" class="form-control" value="" placeholder="PUNTO DE LLEGADA" required id="autocomplete2">
                         </div>
-
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-12">
+                            <div id="map2"></div>
+                            <!-- <button type="button" class="btn btn-primary" id="btn-map2" data-mapa="map2">Ver</button> -->
+                        </div>
+                        <div class="col-md-12 mb-3">
                             <input type="text" class="form-control" value="" placeholder="DETALLE" required>
                         </div>
 
@@ -402,8 +425,8 @@
     <script src="../js/jquery.animateNumber.min.js"></script>
     <script src="../js/bootstrap-datepicker.js"></script>
     <script src="../js/scrollax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="../js/google-map.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
+    <!-- <script src="../js/google-map.js"></script> -->
     <script src="../js/main.js"></script>
     <script src="https://kit.fontawesome.com/742049c140.js" crossorigin="anonymous"></script>
 
@@ -458,7 +481,9 @@
             });
         });
     </script>
-
+    <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrj-Po03GaGWB_AVjgwE-bxwrKq60Xa_s&libraries=places"></script>
+    <script async src="../js/localizacion.js"></script>
+    <script async src="../js/prueba.js"></script> -->
 </body>
 
 </html>
